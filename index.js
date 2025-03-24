@@ -157,7 +157,7 @@ function getShuffledNumbers() {
 function changeMusic(direction) {
   musicIndex = (musicIndex + direction + songs.length) % songs.length;
   const randomNumber3 = getShuffledNumbers()[musicIndex];
-  loadMusic(songs[musicIndex]);
+  loadMusic(songs[randomNumber3]);
   playMusic();
 }
 
